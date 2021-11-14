@@ -1,0 +1,37 @@
+@media (min-width: 48rem) {
+   .container {
+      min-width: 48rem;
+   }
+
+   .main_content {
+      max-width: 102.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (min-width: 48rem) {
+   .input_field_container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+   }
+
+   input.email {
+      width: 22rem;
+   }
+
+   .warning {
+      position: absolute;
+      margin: 5rem 0 0 2rem;
+   }
+
+   .notify_me {
+      width: 10rem;
+   }
+
+   .notify_me_btn {
+      width: 100rem;
+   }
+}

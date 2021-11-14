@@ -29,14 +29,14 @@
 
             <div class="title_container">
                <h1 class="title">
-                  <span>We are launching </span>
+                  <span class="we_are">We are launching </span>
                   soon!
                </h1>
-               <p>Subscribe and get notified</p>
+               <p class="cta">Subscribe and get notified</p>
             </div>
 
             <div class="input_field_container">
-               <div class="field">
+               <form class="field">
                   <label for="email"></label>
                   <input
                      type="email"
@@ -44,18 +44,24 @@
                      id="email"
                      placeholder="Your email address..."
                   />
-               </div>
-               <div class="warning">
-                  <p>Please provide a valid email address</p>
-               </div>
 
-               <div class="notify_me">
+                  <div class="warning">
+                     <p>Please provide a valid email address</p>
+                  </div>
+
                   <button type="submit" name="notify_me" class="notify_me_btn">
                      Notify Me
                   </button>
-               </div>
+               </form>
             </div>
-            <div class="dashboard"></div>
+
+            <div class="dashboard">
+               <img
+                  src="./images/illustration-dashboard.png"
+                  alt="dashboard"
+                  class="illustration"
+               />
+            </div>
          </main>
 
          <footer>
@@ -66,7 +72,7 @@
                         <img
                            src="./images/facebook-color.svg"
                            alt="facebook"
-                           class="fb_icon"
+                           class="icon fb_icon"
                            rel="noreferrer noopener"
                         />
                      </a>
@@ -76,7 +82,7 @@
                         <img
                            src="./images/twitter-color.svg"
                            alt="facebook"
-                           class="twitter_icon"
+                           class="icon twitter_icon"
                            rel="noreferrer noopener"
                         />
                      </a>
@@ -86,7 +92,7 @@
                         <img
                            src="./images/instagram.svg"
                            alt="instagram"
-                           class="instagram_icon"
+                           class="icon instagram_icon"
                            rel="noreferrer noopener"
                         />
                      </a>
@@ -114,5 +120,6 @@
             </p>
          </footer>
       </div>
+      <script src="./scripts/index.js"></script>
    </body>
 </html>

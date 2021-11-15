@@ -191,10 +191,6 @@ footer a {
       gap: 2rem; /*between input & button */
    }
 
-   .eamil {
-      margin-top: 1rem;
-   }
-
    .warning {
       position: absolute;
    }

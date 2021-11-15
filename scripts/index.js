@@ -37,11 +37,17 @@ const addRemoveClass = (isError, elem) => {
 
 const checkEmail = (elem) => {
    const value = elem.value.trim();
+   const warningField = elem.parentElement;
+   const message = warningField.querySelector(".warning p");
 
-   return (
-      addRemoveClass(!isRequired(value), elem) &&
-      addRemoveClass(!isEmailCorrect(value), elem)
-   );
+   const isEmpty = !isRequired(value)
+      ? (message.innerHTML =
+           "Whoops! It looks like you forgot to add your email")
+      : !isEmailCorrect(value)
+      ? (message.innerHTML = "Please provide a valid email address")
+      : false;
+
+   return addRemoveClass(isEmpty, elem) && addRemoveClass(isEmpty, elem);
 };
 
 /* ================= claim button here =================*/

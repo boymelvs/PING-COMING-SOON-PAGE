@@ -14,7 +14,6 @@
    --light-red: #ff5263;
    --gray: #969696;
    --very-dark-blue: #151f29;
-   --green: #38cc8c;
 
    --font-size-10: 62.5%; /* 10px */
    --font-fam-libre-franklin: "Libre Franklin", sans-serif;
@@ -46,9 +45,10 @@ body {
 
 .main_content {
    max-width: 102.4rem;
-   margin: 5rem 2rem 5rem 2rem;
+   margin: 5rem 2rem;
 }
 
+/* ================= logo title cta start here ================= */
 .logo_container {
    margin-bottom: 3rem;
 }
@@ -73,22 +73,21 @@ body {
    font-weight: var(--font-weight-600);
 }
 
+/* ================= forms start here ================= */
 form.field {
-   margin-bottom: 5rem;
+   margin-bottom: 7rem;
 }
 
 .email {
-   width: 45rem;
-   padding: 2rem 3rem;
+   width: 48rem;
+   padding: 1.8rem 3rem;
    border-radius: 3rem;
    border: 0.1rem solid var(--pale-blue);
    font-weight: var(--font-weight-700);
-   margin-bottom: 1rem;
 }
 
-::placeholder {
-   letter-spacing: 0.1rem;
-   opacity: 0.3;
+.email::placeholder {
+   opacity: 0.2;
 }
 
 .email:focus {
@@ -107,10 +106,6 @@ form.field {
    color: var(--light-red);
 }
 
-.warning p {
-   margin-bottom: 2.5rem;
-}
-
 /* for js classes */
 .warning.message {
    display: unset;
@@ -119,19 +114,21 @@ form.field {
 
 .notify_me_btn {
    width: 20rem;
-   padding: 2rem;
+   padding: 1.8rem;
    border: none;
    border-radius: 3rem;
    background-color: var(--blue);
    color: var(--pale-blue);
    font-weight: var(--font-weight-600);
+   box-shadow: 0.5rem 0.5rem 2rem rgba(79, 125, 243, 0.3);
 }
 
 .notify_me_btn:hover {
    cursor: pointer;
-   filter: brightness(130%) saturate(100%);
+   filter: brightness(110%) saturate(85%);
 }
 
+/* ================= dashboard is here ================= */
 .dashboard {
    margin: auto;
    width: 85%;
@@ -141,6 +138,7 @@ form.field {
    width: 85%;
 }
 
+/* ================= social media start here ================= */
 .social_media_icon {
    margin-bottom: 4rem;
 }
@@ -156,9 +154,9 @@ form.field {
 .fb_icon,
 .twitter_icon,
 .instagram_icon {
-   width: 4rem;
-   height: 4rem;
-   border: 0.1rem solid var(--gray);
+   width: 4.5rem;
+   height: 4.5rem;
+   border: 0.1rem solid rgba(150, 150, 150, 0.2);
    border-radius: 50%;
    padding: 0.5rem 1rem;
 }
@@ -167,7 +165,7 @@ form.field {
    cursor: pointer;
    background: var(--blue);
    border: 0.1rem solid var(--blue);
-   filter: invert(10) sepia(10) saturate(100) hue-rotate(220deg) brightness(2);
+   filter: invert(10) sepia(1) saturate(100) hue-rotate(600deg) brightness(3);
 }
 
 .copyright {
@@ -176,10 +174,12 @@ form.field {
 
 footer {
    font-size: 1.6rem;
+   margin-bottom: 1rem;
 }
 
 footer a {
    text-decoration: none;
+   color: var(--blue);
 }
 
 /* ================= desktop screen size here ================= */
@@ -198,7 +198,7 @@ footer a {
    .warning p {
       position: relative;
       top: 6rem;
-      left: -17rem;
+      left: -21rem;
    }
 }
 
@@ -223,12 +223,17 @@ footer a {
 
    .email {
       width: 100%;
-      padding: 1.4rem 3rem;
+      padding: 1.5rem 3rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .warning p {
+      margin-bottom: 2.5rem;
    }
 
    .notify_me_btn {
       width: 100%;
-      padding: 1.4rem;
+      padding: 1.5rem;
    }
 
    .dashboard {
